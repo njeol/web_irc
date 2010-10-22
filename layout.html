@@ -7,11 +7,27 @@
 
 	<title>untitled</title>
 	
-</head>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="my_js.js"></script>
 
-<body>
+<script type="text/javascript">
+	  var i=1;
+	
+    function createTextarea(idConteneur)
+    {
+        var zonetxt = document.createElement("textarea");
+        document.getElementById(idConteneur).appendChild(zonetxt);
+    }	</script>
 
-<button> chat </button>
+  <body>
+
+    <button onclick="createTextarea('conteneurTextarea');"> create a textarea </button>
+    
+	<div id="conteneurTextarea">&nbsp;</div>
+
+  </body>
+</html>
+
 
 </body>
 </html>
